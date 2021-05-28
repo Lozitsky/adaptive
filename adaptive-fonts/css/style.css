@@ -96,10 +96,13 @@ html, body {
 .content {
     font-weight: 900;
     /*font-size: calc((100vw - 1920) / 100 + 40px);*/
+    padding: 5px;
 }
 
 /* https://youtu.be/HJZP5QsrpXs?list=PLM6XATa8CAG4uCli-pMvuvwj46UaQoqIc */
 /* calc((100vw - 'start-width'px) / (('start-width' - 'end-width') / ('start-size' - 'end-size')) + 'start-size'px); */
 h1 {
-    font-size: calc((100vw - 1920px) / ((1920 - 320) / (40 - 24)) + 40px);
+    /*font-size: calc((100vw - 1920px) / ((1920 - 320) / (40 - 24)) + 40px);*/
+    font-size: calc((100vw - 320px) / ((1920 - 320) / (40 - 24)) + 24px);
 }
+
