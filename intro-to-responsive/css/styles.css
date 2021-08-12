@@ -1,0 +1,84 @@
+body, html {
+    font-family: sans-serif;
+}
+
+header {
+    background: grey;
+    height: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+nav {
+    padding-top: 15px;
+}
+
+nav:hover {
+    color: white;
+}
+
+.container {
+    /*height: 400px;*/
+    height: 25em;
+    margin: 0 auto;
+}
+
+.main-content {
+    background-color: aquamarine;
+    float: left;
+    /*height: inherit;*/
+    height: 25em;
+    width: 75%;
+}
+
+.secondary-content {
+    background-color: cadetblue;
+    float: right;
+    /*height: inherit;*/
+    height: 25em;
+    width: 25%;
+}
+
+footer {
+    background: grey;
+    height: 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        /* incorrect because it doesn't have a static parent size. In this case, the value will be auto*/
+        /* https://www.w3.org/TR/CSS21/visudet.html#propdef-height */
+        /*height: 100%;*/
+        /*height: 25em;*/
+        height: auto;
+    }
+
+    .main-content {
+        float: none;
+        /*height: 400px;*/
+        /*width: 100%;*/
+        width: inherit;
+    }
+
+    .secondary-content {
+        float: none;
+        /*height: 200px;*/
+        height: 12.5em;
+        /*width: 100%;*/
+        width: inherit;
+    }
+}
+
