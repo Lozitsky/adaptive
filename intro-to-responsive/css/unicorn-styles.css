@@ -1,0 +1,321 @@
+/* color pallete: https://color.adobe.com/For-animation-color-theme-8144301/ */
+
+/* base fonts */
+
+html,
+body {
+  color: #2C858D;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 275%;
+}
+
+h3 {
+  font-size: 250%;
+}
+
+h4 {
+  font-size: 225%;
+}
+
+h5 {
+  font-size: 200%;
+}
+
+h6 {
+  font-size: 175%;
+}
+
+p {
+  color: #74CEB7;
+  font-size: 150%;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+/* primary nav */
+
+header {
+  background: #FF2B65;
+  border-bottom: 3px solid #B3184A;
+  height: 75px;
+  margin-bottom: 25px;
+  padding: 0 5%;
+}
+
+h2 {
+  background: url(/intro-to-responsive/images/angry-unicorn.jpg) no-repeat;
+  background-size: cover;
+  border: 3px solid #B3184A;
+  border-radius: 50%;
+  float: left;
+  height: 50px;
+  margin-top: 12px;
+  text-indent: -99999px;
+  width: 50px;
+}
+
+.main-nav {
+  float: right;
+  padding-top: 15px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 15px 10px 0;
+}
+
+.main-nav a {
+  color: white;
+  font-size: 110%;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  border-bottom: 4px solid #B3184A;
+}
+
+/* body content */
+
+.container {
+  margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+.main-content,
+.secondary-content {
+  /*height: 500px;*/
+  height: 31.25em;
+}
+
+.main-content {
+  vertical-align: top;
+  padding-bottom: 0.5em;
+}
+
+.secondary-content {
+  vertical-align: top;
+}
+
+/* main content */
+
+.hero-img {
+  border-radius: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+/* secondary content */
+
+.secondary-content {
+  border-left: 2px solid #FFDCEB;
+  text-align: center;
+  /*width: 24%;*/
+}
+
+.secondary-content li,
+.secondary-content p {
+  font-size: 140%;
+  line-height: 160%;
+}
+
+.secondary-content ul {
+  border-top: 2px solid #7EBF9C;
+  border-bottom: 2px solid #7EBF9C;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.secondary-content li{
+  color: #8DD6AF;
+}
+
+.secondary-content h3,
+.secondary-content p  {
+  color: #7EBF9C;
+  font-weight: 800;
+}
+
+.aside-img {
+  border: 5px solid #8DD6AF;
+  border-radius: 50%;
+  display: block;
+  height: 100px;
+  margin: 10px auto;
+  width: 100px;
+}
+
+/* footer */
+
+footer {
+  background: #B3184A;
+  /*height: 150px;*/
+  height: auto;
+  text-align: center;
+}
+
+footer ul {
+  max-width: 697px;
+  margin: auto;
+}
+
+footer img {
+  width: 25px;
+  margin: 10px;
+}
+
+footer p {
+  color: white;
+}
+
+.three-column {
+  background: #FF2B65;
+  border-radius: 10px;
+  color: white;
+  /*height: 100px;*/
+  height: 6.25em;
+  margin: 0.625em;
+  width: 12.5em;
+  vertical-align: top;
+}
+
+li.three-column {
+  padding: 0.3125em;
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+  border: 3px solid #B3184A;
+  height: 15px;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.btn {
+  width: 50%;
+  padding: 3px;
+  color: white;
+  background: #B3184A;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/*region------------------------media-------------------------------------*/
+
+/* Extra small devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+  .container {
+    height: auto;
+  }
+
+  .main-content, .secondary-content {
+    display: block;
+    height: auto;
+    padding-bottom: 0.5em;
+    /*width: 100%;*/
+    width: inherit;
+  }
+
+  .main-content p {
+    display: block;
+    /*width: 100%;*/
+    width: inherit;
+  }
+
+  .hero-img {
+    display: block;
+    width: 100%;
+  }
+
+  .three-column {
+    margin: 0.625em auto;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    height: auto;
+  }
+
+  .main-content {
+    display: inline-block;
+    height: auto;
+    width: 69%;
+  }
+
+  .main-content p, .hero-img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .secondary-content {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .three-column {
+    display: inline-block;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) {
+  .container {
+    padding: 0;
+    width: 90%;
+  }
+
+  /* main content */
+
+  .main-content {
+    width: 75%;
+  }
+
+  .main-content p {
+    width: 50%;
+  }
+
+  .hero-img {
+    width: 45%;
+  }
+
+  /* secondary content */
+
+  .secondary-content {
+    width: 24%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+}
+
+/*endregion-------------------------------media----------------------------------------------*/
