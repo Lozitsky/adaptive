@@ -1,0 +1,122 @@
+header, footer {
+    background: #bbb;
+    /*height: 3em;*/
+    height: 8.5vh;
+}
+
+header, footer, aside, .section1, .section2 {
+    padding: 1vmin;
+}
+
+header {
+    /*margin-bottom: 0.625em;*/
+    margin-bottom: 1.5vh;
+}
+
+footer {
+    /*margin-top: 0.625em;*/
+    margin-top: 1.5vh;
+}
+
+main {
+    /* 97 -17 - 2 */
+    height: 80vh;
+    /*overflow: hidden;*/
+}
+
+article {
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*height: 100%;*/
+    /*width: 75%;*/
+    /*height: auto;*/
+}
+
+.section1,
+.section2 {
+    /*height: 50%;*/
+    /*width: 80vw;*/
+    /*width: 100%;*/
+}
+
+.section1 {
+    background: #e00;
+}
+
+.section2 {
+    background: #ffaa00;
+}
+
+aside {
+    /*display: inline-block;*/
+    /*float: right;*/
+    /*height: 100%;*/
+    /*width: 25%;*/
+    background: #eeef00;
+}
+
+/*region------------------------media-------------------------------------*/
+
+/* Extra small devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+    article {
+        height: 66.666%;
+    }
+    section {
+        height: 50%;
+    }
+    aside {
+        height: 33.333%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    article {
+        display: inline-block;
+        float: left;
+        height: 100%;
+        width: 75%;
+    }
+
+    .section1,
+    .section2 {
+        height: 50%;
+        /*width: 80vw;*/
+        width: 100%;
+    }
+
+    article {
+        width: 50%;
+    }
+
+    aside {
+        display: inline-block;
+        float: right;
+        height: 100%;
+    }
+
+    aside {
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) {
+    article {
+        width: 75%;
+    }
+    aside {
+        width: 25%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+}
+
+/*endregion-------------------------------media----------------------------------------------*/
