@@ -1,0 +1,17 @@
+.div1, .div2 {
+    width: 20vw;
+    height: 20vw;
+    color: white;
+}
+
+.div1 {
+    background: #000;
+    position: relative;
+}
+
+.div2 {
+    background: #555555;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

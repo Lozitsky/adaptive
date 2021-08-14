@@ -1,0 +1,26 @@
+body {
+    color: #ffffff;
+}
+
+.div1 {
+    background: #555555;
+    position: relative;
+    height: 80vh;
+    width: 40vh;
+}
+
+.div2 {
+    position: absolute;
+    background: #000;
+    height: 50%;
+    width: 80%;
+    bottom: 0;
+    right: -40%;
+}.div3 {
+     position: absolute;
+     background: #bbbbbb;
+     width: 30vh;
+     height: 30vh;
+     bottom: -15vh;
+     right: 0;
+ }

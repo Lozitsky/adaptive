@@ -1,0 +1,30 @@
+.div1, .div2, .div3 {
+    display: inline-block;
+    background: #000;
+    width: 20vw;
+    height: 20vw;
+    color: #ffffff;
+}
+
+.div1 {
+    float: left;
+}
+/*
+.div4 {
+    background: #fff;
+
+    float: left;
+}*/
+
+.div2 {
+    /*float: none;*/
+    /*margin: 0 0 0 auto;*/
+    float: right;
+
+}
+
+.div3 {
+    margin-left: 1vw;
+    float: right;
+}
+

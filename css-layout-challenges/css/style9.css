@@ -1,0 +1,25 @@
+body {
+    color: white;
+}
+.div1 {
+    position: relative;
+    background: #555555;
+    width: 30vw;
+    height: 80vh;
+}
+
+.div2, .div3 {
+    left: 5vw;
+    position: absolute;
+    background: #000;
+    width: 20vw;
+    height: 20vw;
+}
+
+.div2 {
+    top: 0;
+}
+
+.div3 {
+    bottom: 0;
+}

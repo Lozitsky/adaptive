@@ -1,0 +1,20 @@
+body {
+    padding: 3vw;
+    color: #ffffff;
+}
+.div1 {
+    background: #555;
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.div2 {
+    position: absolute;
+    background: #000;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+}

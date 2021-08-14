@@ -1,0 +1,19 @@
+body {
+    color: #ffffff;
+}
+
+.div1 {
+    background: #555555;
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+}
+
+.div2 {
+    background: #000;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0;
+    top: 0;
+}
