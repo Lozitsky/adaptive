@@ -1,11 +1,11 @@
 body {
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 
 .div1 {
-    background: #555555;
-    width: 50vh;
-    height: 50vh;
+    background: #3a3a3c;
+    width: 40vw;
+    height: 40vw;
     position: relative;
 }
 

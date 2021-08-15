@@ -1,11 +1,11 @@
 body {
-    color: #fff;
+    /*color: #fff;*/
 }
 .div1 {
     position: relative;
-    background: #555555;
-    height: 50vh;
-    width: 50vh;
+    background: #3a3a3c;
+    height: 40vw;
+    width: 40vw;
 }
 
 .div2 {
@@ -13,6 +13,6 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 25vh;
-    width: 25vh;
+    height: 20vw;
+    width: 20vw;
 }

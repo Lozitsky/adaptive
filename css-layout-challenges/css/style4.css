@@ -1,7 +1,7 @@
 .div1, .div2 {
     width: 20vw;
     height: 20vw;
-    color: white;
+    /*color: white;*/
 }
 
 .div1 {
@@ -10,7 +10,7 @@
 }
 
 .div2 {
-    background: #555555;
+    background: #3a3a3c;
     position: absolute;
     top: 50%;
     left: 50%;

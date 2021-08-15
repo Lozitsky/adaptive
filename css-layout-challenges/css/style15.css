@@ -1,7 +1,7 @@
 main {
-    color: #ffffff;
-    width: 105vh;
-    height: 90vh;
+    /*color: #ffffff;*/
+    width: 83vw;
+    height: 69.8vw;
     position: relative;
 }
 
@@ -11,14 +11,14 @@ main {
 
 .div1, .div4 {
     background: #3a3a3c;
-    width: 50vh;
-    height: 50vh;
+    width: 39.4vw;
+    height: 39.4vw;
 }
 
 .div2, .div3 {
     background: #000;
-    width: 25vh;
-    height: 25vh;
+    width: 20.8vw;
+    height: 20.8vw;
 }
 
 .div2 {

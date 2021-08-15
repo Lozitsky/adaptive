@@ -3,22 +3,14 @@
     background: #000;
     width: 20vw;
     height: 20vw;
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 
 .div1 {
     float: left;
 }
-/*
-.div4 {
-    background: #fff;
-
-    float: left;
-}*/
 
 .div2 {
-    /*float: none;*/
-    /*margin: 0 0 0 auto;*/
     float: right;
 
 }

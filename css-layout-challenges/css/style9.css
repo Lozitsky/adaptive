@@ -1,19 +1,19 @@
 body {
-    color: white;
+    /*color: white;*/
 }
 .div1 {
     position: relative;
-    background: #555555;
-    width: 30vw;
-    height: 80vh;
+    background: #3a3a3c;
+    width: 31vw;
+    height: 63vw;
 }
 
 .div2, .div3 {
     left: 5vw;
     position: absolute;
     background: #000;
-    width: 20vw;
-    height: 20vw;
+    width: 21vw;
+    height: 21vw;
 }
 
 .div2 {
