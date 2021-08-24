@@ -1,0 +1,114 @@
+html, body {
+    /*height: 100%;*/
+    height: auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid #000;
+    margin: 0 auto;
+    /*width: 594px;*/
+    /*height: 918px;*/
+
+    /*width: 568px;*/
+    /*height: 892px;*/
+    height: 89.2vw;
+    width: 56.8vw;
+}
+
+article {
+    width: 100%;
+    height: 33.333%;
+    display: flex;
+}
+
+article:not(:last-child) {
+    border-bottom: 2px solid #000;
+}
+
+section {
+    border: 2px solid #000;
+}
+
+.article1 {
+    align-items: center;
+    background: #e5e5e5;
+}
+
+main {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    margin-left: 26%;
+}
+
+main> .section1, main> .section2 {
+    width: 12.2vw;
+    height: 12.2vw;
+}
+
+main > section {
+    background: #cccccc;
+    position: absolute;
+}
+
+main> .section1 {
+    top: 2vw;
+}
+
+main> .section2 {
+    top: 2vw;
+    right: 0;
+}
+
+main> .section3 {
+    height: 42%;
+    bottom: 2vw;
+    width: 100%;
+}
+
+.article2 {
+    background: #cccccc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+}
+
+.article2 > section {
+    width: 12vw;
+    height: 8vw;
+    background: #e5e5e5;
+}
+
+.article2 > .section1 {
+    align-self: flex-end;
+}
+
+.article2 > .section3 {
+    align-self: flex-start;
+}
+
+
+.article3 {
+    background: #e5e5e5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+}
+
+.article3 > section {
+    background: #cccccc;
+    height: 14vw;
+}
+
+.article3 > .section1 {
+    width: 14vw;
+}
+
+.article3 > .section2 {
+    width: 36.5vw;
+}
