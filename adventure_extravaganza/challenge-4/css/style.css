@@ -1,0 +1,108 @@
+html, body {
+    height: auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid #000;
+    margin: 0 auto;
+    /*width: 594px;*/
+    /*height: 918px;*/
+
+    /*width: 568px;*/
+    /*height: 892px;*/
+    height: 89.2vw;
+    width: 56.8vw;
+}
+
+header {
+    height: 5.1%;
+    background: #808080;
+    border: 1px solid #231f20;
+}
+
+.box {
+    border: 2px solid #231f20;
+}
+
+.section1 {
+    height: 30.5%;
+    background: #cccccc;
+    border: 1px solid #231f20;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    padding: 1.3vw;
+}
+
+.section1 > article {
+    background: #e5e5e5;
+}
+
+.section1 > .box2 {
+    grid-row: span 3;
+}
+
+.section2 {
+    height: 32%;
+    background: #f2f2f2;
+    display: flex;
+}
+
+.section3 {
+    height: 32.4%;
+    background: #cccccc;
+    display: flex;
+}
+
+.section2 > article {
+    width: 50%;
+    border: 1px solid #231f20;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.55vw;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.section2 > .article2 > .box3 {
+    order: -1;
+}
+
+.section2 article > section {
+    background: #d9d9d9;
+    width: 48.25%;
+    height: 48.25%;
+}
+
+.section2 article > section:last-child {
+    width: 100%;
+}
+
+.section3 > article {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #231f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section3 article > section {
+    width: 80%;
+    background: #e5e5e5;
+}
+
+.section3 article > .box1 {
+    height: 29%;
+}
+
+.section3 article > .box2 {
+    height: 53.5%;
+}
+

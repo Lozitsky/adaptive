@@ -1,0 +1,141 @@
+html, body {
+    /*height: 100%;*/
+    height: auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid #000;
+    margin: 0 auto;
+    /*width: 594px;*/
+    /*height: 918px;*/
+
+    /*width: 568px;*/
+    /*height: 892px;*/
+    height: 89.2vw;
+    width: 56.8vw;
+}
+
+article {
+    display: flex;
+}
+
+.article1 {
+    background: #808080;
+    height: 42.5%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4.6vw;
+}
+
+main {
+    background: #cccccc;
+    height: 42.5%;
+    display: flex;
+}
+
+main, footer {
+    border-top: 2px solid #000;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #808080;
+    height: 15%;
+    /*padding-left: 1.1vw;*/
+}
+
+section {
+    border: 2px solid #4e4a4b;
+}
+
+.article1 > section, footer section {
+    background: #cccccc;
+}
+
+.article1 > .section1, .article1 > .section3 {
+    height: 3.1vw;
+    width: 55%;
+}
+
+.article1 > .section2 {
+    height: 15vw;
+    width: 15vw;
+}
+
+main > article {
+    width: 50%;
+    height: 100%;
+    padding: 1.1vw;
+}
+
+main section {
+    background: #d9d9d9;
+}
+
+.article2 {
+    border-right: 1px solid #231f20;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article3 {
+    border-left: 1px solid #231f20;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article2 > section:first-child {
+    height: 86.6%;
+}
+
+.article2 > section:last-child, .article3 > section:first-child {
+    height: 8.5%;
+    width: 100%;
+}
+
+.article3 > section:first-child {
+    width: 102%;
+}
+
+.article3 > section {
+    width: 47.8%;
+    height: 42%;
+    margin-left: -0.25vw;
+}
+
+footer > section:first-child {
+    margin-left: 1.1vw;
+    height: 11vw;
+    width: 11vw;
+}
+
+nav {
+    /*border: 1px solid #000;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    align-content: space-evenly;
+}
+
+nav> section:nth-child(odd) {
+    width: 3vw;
+    height: 3vw;
+}
+
+nav > section:nth-child(even) {
+    width: 22.5vw;
+    height: 3vw;
+}
