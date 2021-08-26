@@ -1,0 +1,191 @@
+html, body {
+    height: auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid #000;
+    margin: 0 auto;
+    /*width: 594px;*/
+    /*height: 918px;*/
+
+    /*width: 568px;*/
+    /*height: 892px;*/
+    height: 89.2vw;
+    width: 56.8vw;
+}
+
+.container > section, main {
+    height: 45%;
+    border: 1px solid #231f20;
+}
+
+.container > section {
+    background: #f2f2f2;
+    display: flex;
+}
+
+.container > section > .article2 {
+    background: #e5e5e5;
+}
+
+.box, nav > section, main > section {
+    border: 2px solid #545051;
+}
+
+.container > section > article {
+    width: 33.333%;
+    border: 1px solid #231f20;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    grid-gap: 1.2vw;
+    /*grid-gap: 1ch;*/
+    padding: 1.2vw;
+}
+
+section > .article1 {
+    grid-template-areas:
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "b4"
+        "b4"
+        "b5"
+        "b6"
+        "b7";
+}
+
+section > .article2 {
+    grid-template-areas:
+        "b1"
+        "b1"
+        "b1"
+        "b1"
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "b5";
+}
+
+section > .article3 {
+    grid-template-areas:
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "b5"
+        "b6"
+        "b6"
+        "b6"
+        "b6";
+}
+
+article > .box {
+    background: #cccccc;
+}
+
+.box1 {
+    grid-area: b1;
+}
+
+.box2 {
+    grid-area: b2;
+}
+
+.box3 {
+    grid-area: b3;
+}
+
+.box4 {
+    grid-area: b4;
+}
+
+.box5 {
+    grid-area: b5;
+}
+
+.box6 {
+    grid-area: b6;
+}
+
+.box7 {
+    grid-area: b7;
+}
+
+.box8 {
+    grid-area: b8;
+}
+
+.box9 {
+    grid-area: b9;
+}
+
+.box10 {
+    grid-area: b10;
+}
+
+.box11 {
+    grid-area: b11;
+}
+
+/*.article1 > .box10 {
+    grid-row: b4-start / b4-end;
+    grid-column: b4-start / b4-end;
+}*/
+
+/*.article2 > .box10 {
+    grid-row: b1-start / b1-end;
+    grid-column: b1-start / b1-end;
+}
+
+.article3 > .box10 {
+    grid-row: b6-start / b6-end;
+    grid-column: b6-start / b6-end;
+}*/
+
+nav {
+    height: 10%;
+    background: #808080;
+    border: 1px solid #231f20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2vw;
+}
+
+nav > section, main > section {
+    background: #e5e5e5;
+}
+
+nav > section {
+    width: 21%;
+    height: 63%;
+}
+
+main {
+    background: #cccccc;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "b1 b3"
+        "b1 b4"
+        "b1 b5"
+        "b1 b6"
+        "b1 b7"
+        "b1 b8"
+        "b2 b9"
+        "b2 b10"
+        "b2 b11";
+
+    grid-gap: 1.2vw;
+    padding: 1.2vw;
+}
