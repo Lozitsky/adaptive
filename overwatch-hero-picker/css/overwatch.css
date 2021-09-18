@@ -1,0 +1,10 @@
+body {
+    overflow: hidden;
+}
+
+video {
+    /*height: 600px;*/
+    height: 56.3vw;
+    position: absolute;
+    opacity: .5;
+}
