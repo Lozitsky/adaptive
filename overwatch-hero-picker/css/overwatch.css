@@ -10,7 +10,7 @@ video {
 
 @font-face {
     font-family: Overwatch;
-    src: url("/fonts/BigNoodleToo.ttf");
+    src: url("../fonts/BigNoodleToo.ttf");
 }
 
 .container {
