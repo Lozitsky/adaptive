@@ -3,8 +3,86 @@ body {
 }
 
 video {
-    /*height: 600px;*/
     height: 56.3vw;
     position: absolute;
     opacity: .5;
+}
+
+@font-face {
+    font-family: Overwatch;
+    src: url("/fonts/BigNoodleToo.ttf");
+}
+
+.container {
+    height: 56.3vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25.190vw 3.550vw 12.849vw 8.538vw 1fr;
+    grid-template-areas:
+        "top"
+        "countdown"
+        "selections"
+        "heroes"
+        "select";
+}
+
+.container__selections {
+    grid-area: selections;
+    display: grid;
+    grid-template-columns: repeat(6, 7.101vw);
+    grid-column-gap: 2.916vw;
+    justify-content: center;
+}
+
+.selection {
+    background: url(../img/hero-portrait.png) center 1.2vw no-repeat;
+    background-size: 98%;
+}
+
+.hero {
+    width: 100%;
+    height: 8.707vw;
+    background: no-repeat;
+    -webkit-background-size: 70%;
+    background-size: 70%;
+    clip-path: polygon(100% 0, 100% 60%, 82% 60%, 81% 69%, 52% 82%, 23% 70%, 23% 60%, 0 60%, 0 0);
+    margin-bottom: 1.57vw;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin: 0;
+    font-family: Overwatch, serif;
+    font-style: italic;
+    font-size: 1.65vw;
+    color: #54f6fe;
+    line-height: 1.267vw;
+    height: 1.35vw;
+}
+
+.hero-dropdown {
+    margin-left: .354vw;
+    width: .985vw;
+    height: .985vw;
+    border: .1vw solid #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    transform: scale(-1);
+}
+
+.hero-dropdown:after {
+    content: "^";
+    color: #fff;
+    font-family: Overwatch, serif;
+    font-size: 1.78vw;
+    line-height: 1.83vw;
 }
