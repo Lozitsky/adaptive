@@ -10,53 +10,88 @@
 </head>
 <body>
 	<video src="reference/overwatch.mp4#t=33"></video>
-	<div class="container">
-		<section class="container__selections">
-<!--			.selection*6>.hero+.info>.name+.hero-dropdown-->
-			<div class="selection">
-				<div class="hero" hero="bastion"></div>
-				<div class="info">
-					<div class="name">Lukosa</div>
-					<div class="hero-dropdown"></div>
-				</div>
-			</div>
-			<div class="selection">
-				<div class="hero" hero="mercy"></div>
-				<div class="info">
-					<div class="name">Jerm10297</div>
-					<div class="hero-dropdown"></div>
-				</div>
-			</div>
-			<div class="selection">
-				<div class="hero" hero="winston"></div>
-				<div class="info">
-					<div class="name">Manletontren</div>
-					<div class="hero-dropdown"></div>
-				</div>
-			</div>
-			<div class="selection">
-				<div class="hero" hero="widowmaker"></div>
-				<div class="info">
-					<div class="name">Dann</div>
-					<div class="hero-dropdown"></div>
-				</div>
-			</div>
-			<div class="selection">
-				<div class="hero" hero="soldier-76"></div>
-				<div class="info">
-					<div class="name">Madh20rat</div>
-					<div class="hero-dropdown"></div>
-				</div>
-			</div>
-			<div class="selection">
-				<div class="hero" hero="tracer"></div>
-				<div class="info">
-					<div class="name">Gecko</div>
-					<div class="hero-dropdown"></div>
-				</div>
-			</div>
-		</section>
-	</div>
+		<main class="container">
+			<section class="container__selections">
+				<!--			.selection*6>.hero+.info>.name+.hero-dropdown-->
+				<article class="selection">
+					<section class="hero hero_bastion"></section>
+					<section class="info">
+						<div class="name">Lukosa</div>
+						<div class="hero-dropdown"></div>
+					</section>
+				</article>
+				<article class="selection">
+					<section class="hero hero_mercy"></section>
+					<section class="info">
+						<div class="name">Jerm10297</div>
+						<div class="hero-dropdown"></div>
+					</section>
+				</article>
+				<article class="selection">
+					<section class="hero hero_winston"></section>
+					<section class="info">
+						<div class="name">Manletontren</div>
+						<div class="hero-dropdown"></div>
+					</section>
+				</article>
+				<article class="selection">
+					<section class="hero hero_widowmaker"></section>
+					<section class="info">
+						<div class="name">Dann</div>
+						<div class="hero-dropdown"></div>
+					</section>
+				</article>
+				<article class="selection">
+					<section class="hero hero_soldier-76"></section>
+					<section class="info">
+						<div class="name">Madh20rat</div>
+						<div class="hero-dropdown"></div>
+					</section>
+				</article>
+				<article class="selection">
+					<section class="hero hero_tracer"></section>
+					<section class="info">
+						<div class="name">Gecko</div>
+						<div class="hero-dropdown"></div>
+					</section>
+				</article>
+			</section>
+<!--			section.heroes>(article.category>section.option*7)+(article.category>section.option*6)*2+(article.category>section.option*5)-->
+			<section class="heroes">
+				<article class="category">
+					<section class="option option_genji"></section>
+					<section class="option option_mccree"></section>
+					<section class="option option_pharah"></section>
+					<section class="option option_reaper"></section>
+					<section class="option option_soldier-76"></section>
+					<section class="option option_sombra"></section>
+					<section class="option option_tracer"></section>
+				</article>
+				<article class="category">
+					<section class="option option_bastion"></section>
+					<section class="option option_hanzo"></section>
+					<section class="option option_junkrat"></section>
+					<section class="option option_mei"></section>
+					<section class="option option_torbjorn"></section>
+					<section class="option option_widowmaker"></section>
+				</article>
+				<article class="category">
+					<section class="option option_dva"></section>
+					<section class="option option_orisa"></section>
+					<section class="option option_reinhardt"></section>
+					<section class="option option_roadhog"></section>
+					<section class="option option_winston"></section>
+					<section class="option option_zarya"></section>
+				</article>
+				<article class="category">
+					<section class="option option_ana"></section>
+					<section class="option option_lucio"></section>
+					<section class="option option_mercy"></section>
+					<section class="option option_symmetra"></section>
+					<section class="option option_zenyatta"></section>
+				</article>
+			</section>
+		</main>
 	<!--	    <script src="src/main.js" type="text/javascript"></script>-->
 	<!--	    <script src="src/data.js" type="text/javascript"></script>    	-->
 </body>

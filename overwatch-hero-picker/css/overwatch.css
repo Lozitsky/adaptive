@@ -1,5 +1,8 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 100vw;
 }
 
 video {
@@ -15,7 +18,6 @@ video {
 
 .container {
     height: 56.3vw;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 25.190vw 3.550vw 12.849vw 8.538vw 1fr;
@@ -85,4 +87,48 @@ video {
     font-family: Overwatch, serif;
     font-size: 1.78vw;
     line-height: 1.83vw;
+}
+
+.heroes {
+    grid-area: heroes;
+    display: grid;
+    grid-template-columns: 7fr 6fr 6fr 5fr;
+    padding-left: 7.000vw;
+    padding-right: 5.500vw;
+    grid-column-gap: 2.97vw;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.option {
+    background: black;
+    width: 2.760vw;
+    height: 4.115vw;
+    margin-right: .359vw;
+    background-size: cover;
+    transform: skewX(-15deg);
+    transform-origin: bottom left;
+    box-shadow: inset 0 .2vw 0 0 #ffffff, inset 0 -.1vw 0 0 #ffffff;
+    -webkit-border-radius: .3vw;
+    -moz-border-radius: .3vw;
+    border-radius: .3vw;
+    -webkit-transition-duration: 25ms;
+    -moz-transition-duration: 25ms;
+    -ms-transition-duration: 25ms;
+    -o-transition-duration: 25ms;
+    transition-duration: 25ms;
+}
+
+.option:hover {
+    transform: scale(1.15) skewX(-15deg) translate(-.2vw, .2vw);
+    box-shadow: 0 0 0 .3vw #ffffff;
+    z-index: 2;
 }
