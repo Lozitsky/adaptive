@@ -12,11 +12,11 @@ video {
 
 @font-face {
     font-family: Overwatch;
-    src: url("/fonts/BigNoodleToo.ttf");
+    src: url("../fonts/BigNoodleToo.ttf");
 }
 
 .container {
-    background: url("/img/bastion.jpg") 0 0 no-repeat;
+    background: url("../img/bastion.jpg") 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
@@ -41,7 +41,7 @@ video {
 }
 
 .selection {
-    background: url(/img/hero-portrait.png) center 1.2vw no-repeat;
+    background: url(../img/hero-portrait.png) center 1.2vw no-repeat;
     background-size: 100%;
 }
 
