@@ -2,16 +2,26 @@
 <html lang="uk">
 <head>
 	<title>Overwatch Hero Picker</title>
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/overwatch.css" rel="stylesheet">
-	<link href="css/assets.css" rel="stylesheet" />
-	<meta content="width=device-width" name="viewport, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+	<link href="css/overwatch.css" rel="stylesheet" type="text/css"/>
+	<link href="css/assets.css" rel="stylesheet" type="text/css">
+	<meta content="width=device-width" name="viewport, initial-scale=1"/>
 	<meta charset="UTF-8">
 </head>
 <body>
-	<video src="reference/overwatch.mp4#t=33"></video>
+<!--	<video src="reference/overwatch.mp4#t=33"></video>-->
 		<main class="container">
-			<section class="container__selections">
+<!--			section.top>article.gameinfo>section.gameinfo__match>.gameinfo__gametype{Atack}+.gameinfo__map{King's Row}^section.gameinfo__character{Bastion}-->
+			<section class="top">
+				<article class="game-info game-info_italic">
+					<section class="game-info__match">
+						<div class="game-info__gametype">Attack</div>
+						<div class="game-info__map">King's Row</div>
+					</section>
+					<section class="game-info__character">Bastion</section>
+				</article>
+			</section>
+			<section class="selections">
 				<!--			.selection*6>.hero+.info>.name+.hero-dropdown-->
 				<article class="selection">
 					<section class="hero hero_bastion"></section>
@@ -30,7 +40,7 @@
 				<article class="selection">
 					<section class="hero hero_winston"></section>
 					<section class="info">
-						<div class="name">Manletontren</div>
+						<div class="name name_small">Manletontren</div>
 						<div class="hero-dropdown"></div>
 					</section>
 				</article>
@@ -91,8 +101,10 @@
 					<section class="option option_zenyatta"></section>
 				</article>
 			</section>
+<!--			section.select>button.select__btn{Select}-->
+			<section class="select">
+				<button class="select__btn">Select</button>
+			</section>
 		</main>
-	<!--	    <script src="src/main.js" type="text/javascript"></script>-->
-	<!--	    <script src="src/data.js" type="text/javascript"></script>    	-->
 </body>
 </html>

@@ -397,7 +397,7 @@ input, button, textarea {
 input::-ms-clear {
     display: none;
 }
-
+*/
 button {
     cursor: pointer;
 }
@@ -406,6 +406,7 @@ button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
+/*
 
 a, a:visited {
     text-decoration: none;

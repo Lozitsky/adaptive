@@ -1,22 +1,25 @@
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    position: relative;
     width: 100vw;
 }
 
 video {
     height: 56.3vw;
     position: absolute;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 @font-face {
     font-family: Overwatch;
-    src: url("../fonts/BigNoodleToo.ttf");
+    src: url("/fonts/BigNoodleToo.ttf");
 }
 
 .container {
+    background: url("/img/bastion.jpg") 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
     height: 56.3vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -29,17 +32,17 @@ video {
         "select";
 }
 
-.container__selections {
+.selections {
     grid-area: selections;
     display: grid;
-    grid-template-columns: repeat(6, 7.101vw);
-    grid-column-gap: 2.916vw;
+    grid-template-columns: repeat(6, 7.1vw);
+    grid-column-gap: 2.89vw;
     justify-content: center;
 }
 
 .selection {
-    background: url(../img/hero-portrait.png) center 1.2vw no-repeat;
-    background-size: 98%;
+    background: url(/img/hero-portrait.png) center 1.2vw no-repeat;
+    background-size: 100%;
 }
 
 .hero {
@@ -49,7 +52,7 @@ video {
     -webkit-background-size: 70%;
     background-size: 70%;
     clip-path: polygon(100% 0, 100% 60%, 82% 60%, 81% 69%, 52% 82%, 23% 70%, 23% 60%, 0 60%, 0 0);
-    margin-bottom: 1.57vw;
+    margin-bottom: 1.29vw;
 }
 
 .info {
@@ -64,12 +67,17 @@ video {
     font-style: italic;
     font-size: 1.65vw;
     color: #54f6fe;
-    line-height: 1.267vw;
-    height: 1.35vw;
+    line-height: 1.8vw;
+    height: 1.8vw;
+}
+
+.name_small {
+    font-size: 1.34vw;
 }
 
 .hero-dropdown {
-    margin-left: .354vw;
+    margin-left: .33vw;
+    margin-right: .17vw;
     width: .985vw;
     height: .985vw;
     border: .1vw solid #fff;
@@ -103,11 +111,6 @@ video {
     align-items: center;
 }
 
-.category {
-    display: flex;
-    align-items: center;
-}
-
 .option {
     background: black;
     width: 2.760vw;
@@ -132,3 +135,64 @@ video {
     box-shadow: 0 0 0 .3vw #ffffff;
     z-index: 2;
 }
+
+.select {
+    grid-area: select;
+    display: flex;
+    justify-content: center;
+}
+
+.select__btn {
+    width: 10.3vw;
+    height: 2.967vw;
+    margin-top: 1.046vw;
+    font-size: 2.45vw;
+    font-family: Overwatch, serif;
+    letter-spacing: .115vw;
+    color: #ffffff;
+    background: #b57500;
+}
+
+.select__btn:hover {
+    background: #ffa200;
+}
+
+.top {
+    grid-area: top;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.646vw 1.9vw;
+}
+
+.game-info_italic {
+    font-family: Overwatch, serif;
+    font-style: italic;
+}
+
+.game-info__match {
+}
+
+.game-info__gametype {
+    font-size: 8.88vw;
+    color: #d81d1f;
+}
+
+.game-info__map {
+    font-size: 2.735vw;
+    color: #ffffff;
+    position: relative;
+    top: -4.6vw;
+    left: 1.3vw;
+}
+
+.game-info__character {
+    position: relative;
+    font-size: 5.2vw;
+    top: 1.4vw;
+    right: 1.21vw;
+    color: #ffffff;
+}
+
